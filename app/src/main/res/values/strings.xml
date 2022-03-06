@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppToLearn</string>
+    <string name="next_fragment">Next Fragment</string>
+    <string name="menu">Menu</string>
+    <string name="user_bio">"It might seem crazy what I am \'bout to say \n Sunshine she\'s here, you can take a break \n I'm a hot air balloon that could go to space \n With the air, like I don't care, baby by the way"</string>
+    <string name="user_name">Myllena Prado</string>
+    <string name="heartbeat">" heartbeat"</string>
+    <string name="timer">Timer</string>
+    <string name="timer_button_start">Start</string>
+    <string name="back">Back</string>
+</resources>

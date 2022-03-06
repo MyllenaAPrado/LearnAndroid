@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#1F0251"
+    tools:context=".aboutdev.DevProfileFragment">
+
+    <Button
+        android:id="@+id/button_back_dev"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_github"
+        app:layout_constraintStart_toStartOf="@+id/button_github"
+        app:layout_constraintTop_toBottomOf="@+id/button_github" />
+
+    <ImageView
+        android:id="@+id/imageDev"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackground"
+        app:srcCompat="@mipmap/ic_about_dev" />
+
+    <TextView
+        android:id="@+id/textDevName"
+        android:layout_width="148dp"
+        android:layout_height="52dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toEndOf="@+id/imageDev"
+        app:layout_constraintTop_toTopOf="@+id/imageDev" />
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="401dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[3]" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="243dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/imageDev"
+        app:layout_constraintTop_toBottomOf="@+id/textDevName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textBio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_github"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:text="GITHUB"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/imageDev"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

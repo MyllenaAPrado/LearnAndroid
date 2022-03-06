@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#1F0251"
+    tools:context=".curiosityGame.CuriosityGameFragment">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Back menu"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_choose"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/button_skip"
+        app:layout_constraintTop_toBottomOf="@+id/button_skip" />
+
+    <Button
+        android:id="@+id/button_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Choose"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button_skip"
+        app:layout_constraintStart_toEndOf="@+id/button_skip"
+        app:layout_constraintTop_toTopOf="@+id/button_skip"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:text="Skip"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="168dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/questionText"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/questionText"
+        app:layout_constraintTop_toBottomOf="@+id/questionText">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="option1"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="option2"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="option3"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="option4"
+            android:textColor="@color/white"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="25dp"
+        android:text="Question:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pointText"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Points:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
